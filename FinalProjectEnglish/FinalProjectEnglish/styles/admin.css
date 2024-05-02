@@ -1,0 +1,209 @@
+﻿header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+    nav a:hover {
+        border-bottom: 2px solid #fff;
+    }
+
+body {
+    margin: 0px;
+    font-family: 'Arial', sans-serif;
+}
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+    margin-left: 10px;
+}
+
+
+h3 {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+
+table {
+    width: 97%;
+    margin-left: .5rem;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+
+th, td {
+    padding: .3rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+hr {
+    height: 2px;
+    background-color: black;
+    border-color: black;
+}
+
+input[type="text"], input[type="button"] {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+    input[type="button"]:hover {
+        background-color: #45a049;
+    }
+
+#NewUser {
+    background-color: #e8e8e8ff;
+    width: 70vW;
+    height: auto;
+    margin-left: .4rem;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: .6rem;
+}
+
+#newStudent, #newProfessor {
+    margin-left: 15px;
+    max-width: 50%;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+input[type="text"],
+select {
+    width: 35%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+#TextBox1,
+#TextBox2,
+#DropDownList1 {
+    margin-bottom: 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .responsive-table th, .responsive-table td {
+        white-space: nowrap;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: .1rem;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-left: 0;
+    }
+
+    table {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

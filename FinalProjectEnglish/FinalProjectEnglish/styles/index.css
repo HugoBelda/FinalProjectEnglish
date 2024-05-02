@@ -1,0 +1,147 @@
+﻿body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+    body p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+    nav a:hover {
+        border-bottom: 2px solid #fff;
+    }
+
+h2 {
+    font-size: 3rem;
+}
+
+.main-content {
+    position: relative;
+    height: 80vh;
+    background: url('../img/U01196801C.jpeg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.additional-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    width: 50%;
+    padding: 3rem;
+}
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.text-content {
+    width: 50%;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.additional-content2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container2 {
+    width: 50%;
+    padding: 3rem;
+}
+
+    .image-container2 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.text-content2 {
+    width: 50%;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: .1rem;
+    font-size: .8rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .image-container,
+    .image-container2 {
+        width: 100%; 
+        padding: 0; /
+    }
+
+        .image-container img,
+        .image-container2 img {
+            width: 100%;
+            height: auto;
+            max-width: none; 
+            max-height: none; 
+        }
+
+    .additional-content,
+    .additional-content2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .text-content,
+    .text-content2 {
+        width: 100%; 
+        margin: 2rem 0; 
+    }
+}
